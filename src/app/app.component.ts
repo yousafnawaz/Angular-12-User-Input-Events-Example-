@@ -12,10 +12,10 @@ export class AppComponent {
     console.log((<HTMLInputElement>event.target).value);
     this.values += (<HTMLInputElement>event.target).value + ' | ';
   }
-  myEvent(evt: any) {
-    console.log(evt);
+  onBlur(event: FocusEvent) {
+    console.log(event.type);
   }
-  onBlur(evt: FocusEvent) {
-    console.log(evt);
+  onFoucs(event: FocusEvent) {
+    console.log(event.type);
   }
 }

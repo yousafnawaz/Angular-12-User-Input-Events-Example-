@@ -9,8 +9,8 @@ export class AppComponent {
   values = '';
   onKey(event: KeyboardEvent) {
     // with type info
-    console.log((<HTMLInputElement>event.target).value);
-    this.values += (<HTMLInputElement>event.target).value + ' | ';
+    console.log((event.target as HTMLInputElement).value);
+    this.values += (event.target as HTMLInputElement).value + ' | ';
   }
   onBlur(event: FocusEvent) {
     console.log(event.type);
